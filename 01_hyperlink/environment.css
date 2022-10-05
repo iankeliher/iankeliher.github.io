@@ -1,0 +1,153 @@
+/* ENVIRONMENT STYLING */
+
+
+/* ------------------------------------ */
+/* GENERAL */
+/* ------------------------------------ */
+
+/* GENERAL ELEMENTS */
+
+/* Strip defaults from Body and DIV */
+body {
+	padding: 0;
+	margin: 0;
+}
+
+div {
+	padding: 0;
+	margin: 0;
+
+}
+
+/* Set Custom Cursor */
+
+html {
+	cursor: url(cursor/eye-cursor.png), auto;
+}
+
+
+/* GENERAL TYPOGRAPHY */
+
+/* Set root size for rem */
+
+html {
+	font-size: 16px;
+}
+
+@font-face {
+	font-family: timezone;
+	src: url(fonts/HALTimezone-Regular.otf);
+}
+
+/* set typeface and strip default padding & margin*/
+h1, h2, h3, h4, h5, h6, p {
+	color: white;
+	font-family: timezone;
+	padding: 0;
+	margin: 0;
+
+}
+
+p {
+	font-size: 1.5rem;
+}
+
+
+/* ------------------------------------ */
+/* MAIN PAGE */
+/* ------------------------------------ */
+
+
+/* BACKGROUND */
+
+.main-page {
+	/*background-color: linear-gradient(#111130,#8C652B);*/
+	background: linear-gradient(#111130,#8C652B);
+}
+
+
+/* SKY SECTION */
+.sky {
+	/*background-color: lightblue;*/
+	border: 1px red solid;
+}
+
+.moon {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+}
+
+.cloud-group {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 15%;
+	padding-bottom: 15%;
+}
+
+.cloud {
+	float: left;
+	margin-right: 5%;
+	cursor: url(cursor/zoom-in-cursor.png), auto;
+}
+
+.cloud1 {
+	border: 1px red solid;
+
+}
+
+.cloud2 {
+	border: 1px red solid;
+
+}
+
+.cloud3 {
+	border: 1px red solid;
+
+}
+
+
+/* HORIZON SECTION */
+.horizon {
+	border: 1px red solid;
+}
+
+.horizon-group {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+.tree {
+	margin-right: 10%;
+	cursor: url(cursor/zoom-in-cursor.png), auto;
+
+}
+
+.bird {
+	position: absolute;
+
+}
+
+
+
+
+/* GROUND SECTION */
+.ground {
+	border: 1px red solid;
+}
+
+.grass {
+
+}
+
+
+
+
+
+
+
+
