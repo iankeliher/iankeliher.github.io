@@ -1,0 +1,183 @@
+/* GENERAL ELEMENTS */
+
+@font-face {
+  font-family: Graphik;
+  src: url(fonts/Graphik-Semibold.otf);
+}
+
+
+.mySlides {display: none}
+
+.hide {
+  display: none;
+}
+
+body {
+  background-color: pink;
+  margin: 0;
+  cursor: crosshair;
+}
+
+.slideshow-container {
+  margin: auto;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.column {
+  flex: 50%;
+}
+
+
+/*SCROLLING TEXT*/
+
+.scroll-text {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.marquee {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  max-width: 100%;
+  height: 75px;
+  overflow-x: hidden;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  
+}
+
+
+
+/*TYPOGRAPHY*/
+
+a {
+  text-decoration: none;
+}
+
+h2, h4 {
+  color: red;
+  font-family: Graphik, helvetica;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 8em;
+  letter-spacing: 2px;
+}
+
+h4 {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+.stroke-text {
+  -webkit-text-stroke: 3px red;
+  color: pink;
+}
+
+.stroke-text:hover {
+  -webkit-text-stroke: 0px;
+  color: red;
+}
+
+
+
+/*CUSTOM CURSORS*/
+
+#hot-col a:hover {
+  cursor: url("cc/kp_hot.png") 50 50, auto;
+}
+
+#cold-col a:hover {
+  cursor: url("cc/kp_cold.png") 50 50, auto;
+}
+
+
+#yes-col a:hover {
+  cursor: url("cc/kp_yes.png") 50 50, auto;
+}
+
+
+#no-col a:hover {
+  cursor: url("cc/kp_no.png") 50 50, auto;
+}
+
+
+#in-col a:hover {
+  cursor: url("cc/kp_in.png") 50 50, auto;
+}
+
+
+#out-col a:hover {
+  cursor: url("cc/kp_out.png") 50 50, auto;
+}
+
+
+#up-col a:hover {
+  cursor: url("cc/kp_up.png") 50 50, auto;
+}
+
+
+#down-col a:hover {
+  cursor: url("cc/kp_down.png") 50 50, auto;
+}
+
+
+#wrong-col a:hover {
+  cursor: url("cc/kp_wrong.png") 50 50, auto;
+}
+
+
+#right-col a:hover {
+  cursor: url("cc/kp_right.png") 50 50, auto;
+}
+
+
+#black-col a:hover {
+  cursor: url("cc/kp_black.png") 50 50, auto;
+}
+
+
+#white-col a:hover {
+  cursor: url("cc/kp_white.png") 50 50, auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
