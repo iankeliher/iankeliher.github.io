@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HOW KATY PERRY ARE YOU????</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="katyperry.css">
+</head>
+
+<body>
+
+  <div class="slideshow-container">
+
+    <div class="marquee">
+      <div class="track">
+      <h4>HOW KATY PERRY ARE YOU????&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOW KATY PERRY ARE YOU????&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOW KATY PERRY ARE YOU????&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOW KATY PERRY ARE YOU????&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOW KATY PERRY ARE YOU????</h4>
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <!-- <img src="-img/img_nature_wide.jpg" style="width:100%"> -->
+      <div class="wrapper">
+        <div id="hot-col" class="column">
+          <a id="hot-answer" class="next" onclick="addOne(); plusSlides(1);"><h2 class="stroke-text">HOT</h2></a>
+        </div>
+        <div id="cold-col" class="column">
+          <a class="next" onclick="plusSlides(1)"><h2 class="stroke-text">COLD</h2></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mySlides">
+      <div class="wrapper">
+        <div id="yes-col" class="column">
+          <a class="next" onclick="plusSlides(1)"><h2 class="stroke-text">YES</h2></a>
+        </div>
+        <div id="no-col" class="column">
+          <a id="no-answer" class="next" onclick="addOne(); plusSlides(1);"><h2 class="stroke-text" class="stroke-text">NO</h2></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="wrapper">
+        <div id="in-col" class="column">
+          <a class="next" onclick="plusSlides(1)"><h2 class="stroke-text">IN</h2></a>
+        </div>
+        <div id="out-col" class="column">
+          <a id="out-answer" class="next" onclick="addOne(); plusSlides(1);"><h2 class="stroke-text">OUT</h2></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="wrapper">
+        <div id="up-col" class="column">
+          <a class="next" onclick="plusSlides(1)"><h2 class="stroke-text">UP</h2></a>
+        </div>
+        <div id="down-col" class="column">
+          <a id="down-answer" class="next" onclick="addOne(); plusSlides(1);"><h2 class="stroke-text">DOWN</h2></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="wrapper">
+        <div id="wrong-col" class="column">
+          <a id="wrong-answer" class="next" onclick="addOne(); plusSlides(1);"><h2 class="stroke-text">WRONG</h2></a>
+        </div>
+        <div id="right-col" class="column">
+          <a class="next" onclick="plusSlides(1)"><h2 class="stroke-text">RIGHT</h2></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <div class="wrapper">
+        <div id="black-col" class="column">
+          <a id="black-answer" class="next" onclick="addOne(); plusSlides(1); results();"><h2 class="stroke-text">BLACK</h2></a>
+        </div>
+        <div id="white-col" class="column">
+          <a class="next" onclick="plusSlides(1); results();"><h2 class="stroke-text">WHITE</h2></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mySlides">
+      <div id="results-col" class="wrapper">
+        <a href="index.html"><h2 class="hide" id="win">KISS AND MAKE&nbsp;UP!<br><span class="stroke-text">YOU ARE <span id="win-percent"></span> KATY&nbsp;PERRY!</span></h2></a>
+        <a href="index.html"><h2 class="hide" id="lose">FIGHT AND BREAK&nbsp;UP.<br><span class="stroke-text">YOU ARE ONLY <span id="lose-percent"></span> KATY&nbsp;PERRY...</span></h2></a>
+    </div>
+
+  </div>
+
+  
+
+<script>
+
+// SLIDESHOW WORKING
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  //dots[slideIndex-1].className += " active";
+}
+
+
+// SET MUSIC VARIABLE
+
+var music = new Audio('music/Katy-Perry-midi.m4a');
+
+
+// SCOREKEEPING
+
+var score = 0;
+
+function addOne() {
+  score++;
+  console.log(score);
+}
+
+//console.log(6/7);
+
+function results() {
+  
+  if (score >= 3) {
+    document.getElementById('win').classList.remove('hide');
+    music.volume = .2;
+    music.play();
+    console.log(score);
+  } else {
+    document.getElementById('lose').classList.remove('hide');
+    console.log(score);
+  }
+
+
+
+  document.getElementById('win-percent').append(((score/6)*100).toFixed(0)+"%");
+  document.getElementById('lose-percent').append(((score/6)*100).toFixed(0)+"%");
+}
+
+console.log("this is working "+score);
+
+
+//document.getElementById('hot-answer').append("this");
+
+
+
+//scorePercent.append("percentage");
+
+
+
+</script>
+
+</body>
+</html> 
