@@ -1,0 +1,208 @@
+/*SUNSET CSS*/
+
+
+/*-------------LOAD FONTS-------------*/
+
+@font-face {
+	font-family: zirkon-light;
+	src: url(fonts/GT-Zirkon-Light.woff2);
+	font-style: normal;
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: zirkon-regular;
+	src: url(fonts/GT-Zirkon-Regular.woff2);
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: zirkon-regular-italic;
+	src: url(fonts/GT-Zirkon-Regular-Italic.woff2);
+	font-style: italic;
+	font-weight: normal;
+}
+
+
+
+/*-------------MAIN STRUCTURE-------------*/
+
+
+.entries-container {
+	max-width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*TYPOGRAPHY*/
+
+h1, h2, h3, h4, h5, h6, p {
+	font-weight: normal;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	margin-block-start: auto;
+	margin-block-end: auto;
+}
+
+h1, h2 {
+	font-family: zirkon-light;
+	font-size: 6em;
+	padding-right: 2em;
+	letter-spacing: -.03em;
+	line-height: 111%;
+}
+
+h4, p {
+	font-family: zirkon-regular;
+	font-size: .9em;
+}
+
+h4 {
+	text-transform: uppercase;
+	letter-spacing: .05em;
+	margin-bottom: .5em;
+}
+
+p {
+	line-height: 133%;
+	margin-bottom: 1.5em;
+}
+
+a {
+	text-decoration: none;
+}
+
+.underline {
+	text-decoration: underline;
+	text-decoration-thickness: 5px;
+	text-underline-offset: 10px;
+}
+
+/*OTHER ELEMENTS*/
+
+hr {
+	height: .2em;
+	border: none;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+
+
+/*TWO-COLUMN GRID*/
+.two-column-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+.entries-container {
+	padding: 3em;
+	padding-bottom: 15em;
+}
+
+.more-info {
+	margin-top: 2em;
+}
+
+.text-info {
+	padding-right: 2em;
+}
+
+
+
+/*-------------Functionality-------------*/
+
+.hide {
+	display: none;
+}
+
+
+/*-------------LIGHT MODE-------------*/
+
+.background-lm {
+	background-color: #EFEFEF;
+}
+
+.color-lm {
+	color: #0BBDF5;
+}
+
+.rule-lm {
+	background-color: #0BBDF5;
+}
+
+/*-------------DARK MODE-------------*/
+
+.background-dm {
+	background-color: #1D1D1D;
+}
+
+.color-dm {
+	color: #727272;
+}
+
+.rule-dm {
+	background-color: #727272;
+}
+
+
+
+.diagram {
+	width: 80%;
+}
+
+
+/*-------------SUN Element-------------*/
+
+.sun {
+	width: 500px;
+	height: 500px;
+	position: fixed;
+	left: 50%;
+	background-color: #EED000;
+	opacity: 50%;
+	border-radius: 50%;
+	margin-left: -250px;
+	filter: blur(12px);
+	margin-top: -80px;
+}
+
+
+
+
+
+/*-------------SUNSET SLIDES-------------*/
+
+.slide {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 100;
+}
+
+.sunset-description {
+	position: fixed;
+	bottom: 5%;
+	left: 5%;
+	width: 35%;
+	color: white;
+	font-size: 1.2em;
+	line-height: 1.3em;
+	text-transform: none;
+	letter-spacing: 0;
+	
+	
+}
+
+.sunset-slide {
+	background: linear-gradient(#FFAF91, #FD6165, #A16A8A);
+	/*background-color: linear-gradient(red 10%, 30%, blue 90%);*/
+	/*background-color: red;*/
+}
+
+
