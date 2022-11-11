@@ -19,11 +19,34 @@ div {
 
 }
 
-/* Set Custom Cursor */
+/* Set Custom Cursor and Hover States */
 
 html {
 	cursor: url(cursor/eye-cursor.png), auto;
 }
+
+.zoom-in a:hover {
+	cursor: url(cursor/zoom-in-cursor.png), auto;
+}
+
+.zoom-out a:hover {
+	cursor: url(cursor/zoom-out-cursor.png), auto;
+}
+
+
+/* For Testing */
+.test-button-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 15%;
+	padding-bottom: 15%;
+}
+
+.test-button {
+	width: 20%;
+}
+
 
 
 /* GENERAL TYPOGRAPHY */
@@ -41,7 +64,7 @@ html {
 
 /* set typeface and strip default padding & margin*/
 h1, h2, h3, h4, h5, h6, p {
-	color: white;
+	color: red;
 	font-family: timezone;
 	padding: 0;
 	margin: 0;
@@ -50,6 +73,14 @@ h1, h2, h3, h4, h5, h6, p {
 
 p {
 	font-size: 1.5rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	cursor: auto;
 }
 
 
@@ -89,8 +120,8 @@ p {
 .cloud {
 	float: left;
 	margin-right: 5%;
-	cursor: url(cursor/zoom-in-cursor.png), auto;
 }
+
 
 .cloud1 {
 	border: 1px red solid;
@@ -123,7 +154,6 @@ p {
 
 .tree {
 	margin-right: 10%;
-	cursor: url(cursor/zoom-in-cursor.png), auto;
 
 }
 
