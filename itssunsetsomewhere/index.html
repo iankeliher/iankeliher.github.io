@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>It's Always Sunset Somewhere</title>
+		<!--<link rel="icon" type="image/x-icon" href=""> make favicon that's yellow dot-->
+		<link rel="stylesheet" href="sunset.css">
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta name="author" content="Ian Keliher">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="js/sunset.js"></script>
+	</head>
+
+	<body class="background-lm">
+		<div class="sun"></div>
+		<div class="entries-container">
+			<div class="entry">
+				<h1 class="color-lm">It’s always <a class="underline" id="sunset-button">sunset</a> somewhere.</h1>
+				<div class="two-column-container more-info hide" id="more-info">
+					<div class="text-info">
+						<h4 class="color-lm">Sunset</h4>
+						<p class="color-lm">
+							Pellentesque eleifend lacus sed risus luctus, id convallis justo laoreet. Nulla bibendum efficitur lacus at porttitor. Nullam tortor ligula, rhoncus eu bibendum sed, mattis non velit. In est lorem, luctus vitae tristique venenatis, tincidunt vitae eros. Curabitur ultricies dolor non purus gravida cursus. Nulla facilisi. Fusce eget pellentesque dolor, vel.
+						</p>
+						<h4 class="color-lm">Twilight</h4>
+						<p class="color-lm">
+							Pellentesque eleifend lacus sed risus luctus, id convallis justo laoreet. Nulla bibendum efficitur lacus at porttitor. Nullam tortor ligula, rhoncus eu bibendum sed, mattis non velit. In est lorem, luctus vitae tristique venenatis, tincidunt vitae eros. Curabitur ultricies dolor non purus gravida cursus. Nulla facilisi. Fusce eget pellentesque dolor, vel.
+						</p>
+					</div>
+					<div class="diagram-info">
+						<img class="diagram" src="img/sunset-diagram_v3-01.png">
+					</div>
+				</div>
+			</div>
+			
+			<hr class="rule-lm">
+
+			<div class="entry">
+				<h2 class="color-lm">The sun is currently setting in <span id="setting-place">Berlin</span>.</h2>
+			</div>
+			
+			<hr class="rule-lm">
+
+			<div class="entry">
+				<h2 class="color-lm">The sun will set for you in <span id="setting-time"></span></h2>
+			</div>
+			
+			<hr class="rule-lm">
+
+			<div class="entry">
+				<h2 class="color-lm">We will close this site to watch the sunset happen. We invite you to join us at <span id="sunset-time"></span>.</h2>
+			</div>
+			
+
+			<div id="sunset-slide" class="slide sunset-slide hide">
+				<h4 class="sunset-description">This site is closed to watch the sunset.<br>If you look outside, you’ll see Sunset for the next XX&nbsp;minutes and XX&nbsp;seconds.<br>We'll be back w/ our regularly scheduled programming at XX:XX:XX</h4>
+			</div>
+
+		</div>
+
+	</body>
+</html>
