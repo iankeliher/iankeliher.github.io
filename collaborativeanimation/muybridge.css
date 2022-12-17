@@ -1,0 +1,282 @@
+@font-face {
+	font-family: GT-America-Exp;
+	src: url(fonts/GT-America-Expanded-Medium-Trial.woff2);
+}
+
+@font-face {
+	font-family: Analo-Grotesk;
+	src: url(fonts/AnaloGrotesk-Trial-Regular.ttf);
+	font-weight: light;
+}
+
+html {
+	scroll-behavior: smooth;
+	background-color: #E3A7E4;
+}
+
+
+body {
+	font-size: 16px;
+}
+
+body, h1, h2, h3, h4, h5, h6, ul, p {
+	margin: 0;
+	padding: 0;
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+
+/*--------------------------------------*/
+/* GENERAL TYPOGRAPHY */
+/*--------------------------------------*/
+
+ul {
+	list-style: none;
+}
+
+p, li {
+	font-family: GT-America-Exp;
+	font-size: .9em;
+}
+
+h2, h3 {
+	font-family: Analo-Grotesk;
+	font-size: 2em;
+}
+
+.blue-text {
+	color: #3D3ADF;
+}
+
+.pink-text {
+	color: #E3A7E4;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/*--------------------------------------*/
+/* GENERAL ELEMENTS */
+/*--------------------------------------*/
+
+.slide {
+	height: 100vh;
+}
+
+.slide-min100 {
+	min-height: 100vh;
+}
+
+.pink-background {
+	background-color: #E3A7E4;
+}
+
+.blue-background {
+	background-color: #3D3ADF;
+}
+
+.blue-button {
+	display: inline-block;
+	border: 3px #3D3ADF solid;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 15px;
+}
+
+.blue-button:hover {
+	background-color: #3D3ADF;
+	color: #E3A7E4;
+}
+
+.pink-button {
+	display: inline-block;
+	border: 3px #E3A7E4 solid;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 15px;
+}
+
+.pink-button:hover {
+	background-color: #E3A7E4;
+	color: #3D3ADF;
+}
+
+.active-item {
+	background-color: red;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	background-color: #3D3ADF;
+	color: #E3A7E4;
+}
+
+
+/*--------------------------------------*/
+/* HOMEPAGE */
+/*--------------------------------------*/
+
+.animation-container {
+	width: 73%;
+	margin: auto;
+	margin-top: 1em;
+}
+
+.animation-container img {
+	width: 100%;
+}
+
+.header-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header-container ul {
+	padding-top: 1em;
+}
+
+.header-container li {
+	display: inline;
+	margin-left: 1.25em;
+	margin-right: 1.25em;
+}
+
+.relative-anchor {
+	position: relative;
+	height: 0;
+	width: 0;
+}
+
+.add-one-info {
+	position: absolute;
+	min-width: 15em;
+	bottom: 2em;
+	left: 2em;
+}
+
+.frame-info {
+	position: absolute;
+	min-width: 15em;
+	right: -68em;
+	bottom: 2em;
+	text-align: right;
+}
+
+.frame-info p, .frame-info h2 {
+	display: inline;
+}
+
+.frame-info p {
+	margin-right: .7em;
+}
+
+.contributor-info {
+	padding-top: .5em;
+}
+
+
+/*--------------------------------------*/
+/* DRAWING PAGE */
+/*--------------------------------------*/
+
+.instruction-text {
+	text-align: center;
+	padding-top: 3em;
+}
+
+.drawing-container {
+	padding-top: 2em;
+}
+
+.drawing-pad {
+	background-color: #E3A7E4;
+	width: 73%;
+	height: 0;
+	padding-top: 40%;
+	margin: auto;
+}
+
+.submit-button-container {
+	text-align: center;
+	/*bottom: 2em;*/
+	width: 100vw;
+	margin-top: 2em;
+	padding-bottom: 2em;
+}
+
+
+
+/*--------------------------------------*/
+/* ARCHIVE PAGE */
+/*--------------------------------------*/
+
+.archive {
+	overflow: scroll;
+}
+
+.archive-frame {
+	background-color: #3D3ADF;
+	width: 100%;
+	height: 150px;
+}
+
+.archive .header-container {
+	padding-top: 2em;
+}
+
+.archive-container {
+	padding-top: 2em;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 10em;
+}
+
+.archive-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 15px;
+}
+
+.entry-grid {
+	display: grid;
+}
+
+.drawing-number {
+	text-align: right;
+	margin-bottom: .15em;
+}
+
+.artist-info {
+	font-size: .7em;
+	margin-top: .7em;
+}
+
+.bottom-fade {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 6em;
+	width: 100vw;
+	background-image: linear-gradient(to bottom, rgba(227,167,228,0), rgba(227,167,228,1) 77%);
+	/*background-color: #E3A7E4;*/
+}
+
+
+/*--------------------------------------*/
+/*FOOTER */
+/*--------------------------------------*/
+
+.footer-text {
+	font-size: .7em;
+	padding-left: 2em;
+	padding-bottom: 3em;
+}
+
