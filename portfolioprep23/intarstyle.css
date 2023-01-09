@@ -1,0 +1,279 @@
+/*SETTING VARIABLES*/
+
+:root {
+	--intarblue: #00A3FF;
+}
+
+
+
+/*TYPOGRAPHY*/
+
+@font-face {
+	font-family: Atlas;
+	src: url(fonts/AtlasGrotesk-Regular.otf);
+}
+
+@font-face {
+	font-family: Atlas Italic;
+	src: url(fonts/AtlasGrotesk-RegularItalic.otf);
+	font-style: italic;
+}
+
+
+body {
+	font-size: 16px;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+	font-family: Atlas;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+
+h1, h2, h3 {
+	font-size: 2em;
+	letter-spacing: -.5px;
+	margin-bottom: .4em;
+	margin-top: 1em;
+}
+
+
+p, li {
+	font-size: .9em;
+	line-height: 1.4em;
+}
+
+
+li {
+	margin-bottom: .6em;
+}
+
+
+/*MAIN*/
+
+.inactive {
+	opacity: .4;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.footer {
+	height: 5em;
+}
+
+
+.info-container {
+	padding: 2em;
+}
+
+.left-half {
+	width: 50vw;
+	height: 100vh;
+	overflow: scroll;
+	margin: 0;
+	float: left;
+	background-color: var(--intarblue);
+	color: white;
+	scrollbar-gutter: auto | stable && both-edges?
+}
+
+.right-half {
+	width: 50vw;
+	height: 100vh;
+	overflow: scroll;
+	margin: 0;
+	float: left;
+	color: var(--intarblue);
+	scrollbar-gutter: auto | stable && both-edges?
+}
+
+
+.two-col {
+	/*display: grid;
+	grid-template-columns: 1fr 1fr;*/
+	column-count: 2;
+}
+
+.max25vw {
+	max-width: 25vw;
+}
+
+
+.dot {
+	width: 6em;
+	height: 6em;
+	/*background-color: blue;*/
+	padding: 0px;
+	margin: 0px;
+	margin-top: 2em;
+	animation: spin 10s linear infinite;
+}
+
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.left-half a {
+	color: white;
+	text-decoration: underline;
+}
+
+.left-half a:hover {
+	text-decoration: none;
+}
+
+.left-half a:visited {
+	color: white;
+	text-decoration: underline;
+}
+
+.right-half a {
+	color: var(--intarblue);
+	text-decoration: none;
+}
+
+.right-half a:hover {
+	text-decoration: underline;
+}
+
+.right-half a:visited {
+	color: var(--intarblue);
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+/*SCHEDULE*/
+
+hr {
+	border-top: 1px solid white;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.date-info {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr 1fr;
+}
+
+
+.button::before {
+	content: '\00d7';
+	font-size: 2em;
+}
+
+.inactive-button::before {
+	content: '\002b';
+}
+
+.button {
+	text-align: right;
+	color: white;
+	font-size: 1em;
+}
+
+.date-info h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.class-info {
+	display: grid;
+	grid-template-columns: 1fr 2.5fr;
+	margin-top: 1em;
+}
+
+.class-info div {
+	grid-column-start: 2;
+}
+
+.class-info p {
+	margin-bottom: .6em;
+}
+
+.class-info p.to-do {
+	margin-bottom: 1.5em;
+}
+
+.class-info p.dd {
+	margin-top: 1.3em;
+}
+
+.due {
+	background-color: #FCFF73;
+	color: black;
+	padding-top: .3em;
+	padding-bottom: .2em;
+	padding-left: .4em;
+	padding-right: .4em;
+	margin-left: -.4em;
+	border-radius: 8px;
+}
+
+.homework {
+	background-color: #FF73C7;
+	color: black;
+	padding-top: .3em;
+	padding-bottom: .2em;
+	padding-left: .4em;
+	padding-right: .4em;
+	margin-left: -.4em;
+	border-radius: 8px;
+}
+
+.note {
+	grid-template-columns: 1fr;
+}
+
+.note-opacity {
+		opacity: 1 !important;
+}
+
+.note p {
+	margin-bottom: 0;
+}
+
+
+/*RESOURCES*/
+
+/*keep div together*/
+.two-col div {
+	overflow: auto;
+}
+
+
+.fpo-block {
+	height: 300px;
+	width: 300px;
+	background-color: blue;
+	float: left;
+	margin: 50px;
+
+}
+
+.red {
+	background-color: red;
+}
+
+
+.hide {
+	display: none;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  .left-half, .right-half {
+  	width: 100vw;
+  	height: auto;
+  }
+}
