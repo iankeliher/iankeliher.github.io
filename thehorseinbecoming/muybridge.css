@@ -107,15 +107,24 @@ a {
 	color: #3D3ADF;
 }
 
-.active-item {
-	background-color: red;
+.FPS-selector li {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
+	color: #3D3ADF;
+}
+
+.FPS-selector li:hover {
+
 	background-color: #3D3ADF;
 	color: #E3A7E4;
+}
+
+.active-item {
+	background-color: #3D3ADF;
+	color: #E3A7E4 !important;	
 }
 
 
@@ -124,13 +133,21 @@ a {
 /*--------------------------------------*/
 
 .animation-container {
-	width: 83%;
-	margin: auto;
-	margin-top: 1em;
+	/*width: 83%;
+	margin: auto;*/
+	margin-top: -50px;
 }
 
 .animation-container img {
-	width: 100%;
+	/*width: 100%;*/
+}
+
+.image-placeholder {
+	max-height: 100vh;
+	max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .header-container {
@@ -141,12 +158,13 @@ a {
 
 .header-container ul {
 	padding-top: 1em;
+	z-index: 100;
 }
 
 .header-container li {
 	display: inline;
-	margin-left: 1.25em;
-	margin-right: 1.25em;
+	margin-left: .8em;
+	margin-right: .8em;
 }
 
 .relative-anchor {
@@ -258,6 +276,24 @@ a {
 
 .entry-grid {
 	display: grid;
+	margin-top: 3em;
+}
+
+.archive-drawing-info {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	position: relative;
+}
+
+.archive-drawing-info p {
+	position: absolute;
+	bottom: 8px;
+}
+
+.archive-drawing-info h2 {
+	position: absolute;
+	bottom: 0px;
+	right: 0;
 }
 
 .drawing-number {
