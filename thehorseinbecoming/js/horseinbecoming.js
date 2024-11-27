@@ -1,6 +1,39 @@
 
 console.log("this is working...");
 
+// define speed variable globally 12FPS as default
+let speed = 1000/12;
+
+// set variables for different FPS buttons
+var oneFPS = document.querySelector("#oneFPS");
+var twelveFPS = document.querySelector('#twelveFPS');
+var twentyfourFPS = document.querySelector('#twentyfourFPS');
+
+// functions for setting speed according to button
+oneFPS.onclick = function() {
+  speed = 1000/1;
+  oneFPS.classList.add('active-item');
+  twelveFPS.classList.remove('active-item');
+  twentyfourFPS.classList.remove('active-item');
+  //console.log("1000");
+}
+
+twelveFPS.onclick = function() {
+  speed = 1000/12;
+  oneFPS.classList.remove('active-item');
+  twelveFPS.classList.add('active-item');
+  twentyfourFPS.classList.remove('active-item');
+  //console.log("100");
+}
+
+twentyfourFPS.onclick = function() {
+  speed = 1000/24;
+  oneFPS.classList.remove('active-item');
+  twelveFPS.classList.remove('active-item');
+  twentyfourFPS.classList.add('active-item');
+  //console.log("24");
+}
+
 
 let frames = [
 	// movement works on a 16 frame loop
@@ -41,7 +74,12 @@ let frames = [
 let htmlImage = document.querySelector(".image-placeholder");
 let imageData = document.querySelector(".data-placeholder");
 
-let speed = 84;
+
+
+
+
+
+
 
 let i = 0;
 function changeFrame() {
@@ -54,8 +92,9 @@ function changeFrame() {
 	// use this to inject metadata
 	imageData.innerText = selectedImage["imgname"];
 
-	console.log(imageData);
-	console.log("the loop is running");
+	// logging data and testing
+	//console.log(imageData);
+	//console.log("the loop is running");
 	
 	i++;
 	if (i>=16) {
